@@ -1,0 +1,29 @@
+###
+
+GET https://localhost:44319/api/Book
+
+###
+
+GET https://localhost:44319/api/Book/3
+
+###
+
+POST https://localhost:44319/api/Book
+content-type: application/json
+
+{
+    "id": 3,
+    "name": "やってみようTwitter",
+    "isRent": false
+}
+
+###
+
+PUT https://localhost:44319/api/Book/3
+content-type: application/json
+
+{
+    "id": 3,
+    "name": "やってみようTwitter",
+    "isRent": true
+}
