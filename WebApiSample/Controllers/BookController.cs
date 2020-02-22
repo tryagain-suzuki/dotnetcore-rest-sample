@@ -15,8 +15,8 @@ namespace WebApiSample.Controllers
 
         private static List<Book> books = new List<Book>
         {
-            new Book {Id = 1, Name = @"New Qiita", isRent = false},
-            new Book {Id = 2, Name = @"TryAgain鈴木のYouTube", isRent = false}
+            new Book {Id = 1, Name = @"New Qiita", IsRent = false},
+            new Book {Id = 2, Name = @"TryAgain鈴木のYouTube", IsRent = false}
         };
 
         [HttpGet]
@@ -49,7 +49,7 @@ namespace WebApiSample.Controllers
                 return NotFound();
 
             target.Name = book.Name;
-            target.isRent = book.isRent;
+            target.IsRent = book.IsRent;
 
             return NoContent();
         }

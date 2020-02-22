@@ -9,6 +9,6 @@ namespace WebApiSample.Models
     {
         public long Id { get; set; }
         public string Name { get; set; }
-        public bool isRent { get; set; }
+        public bool IsRent { get; set; }
     }
 }
