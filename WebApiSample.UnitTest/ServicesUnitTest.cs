@@ -6,7 +6,7 @@ namespace WebApiSample.UnitTest
     public class ServicesUnitTest
     {
         [TestMethod]
-        public void CreateGreeting_NomalCase()
+        public void CreateGreeting_NormalCase()
         {
             var service = new Services.GreetingService();
             string name = "Suzuki";
