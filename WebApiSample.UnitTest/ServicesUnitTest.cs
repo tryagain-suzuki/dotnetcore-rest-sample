@@ -10,10 +10,11 @@ namespace WebApiSample.UnitTest
         {
             var service = new Services.GreetingService();
             string name = "Suzuki";
+            string expected = $@"Hello, {name}!!";
 
-            var greeting = service.CreateGreeting(name);
+            var actual = service.CreateGreeting(name);
 
-            Assert.AreEqual($@"Hello, {name}!!", greeting);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
