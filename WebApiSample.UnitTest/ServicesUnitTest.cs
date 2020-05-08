@@ -9,7 +9,7 @@ namespace WebApiSample.UnitTest
         public void CreateGreeting_NormalCase()
         {
             var service = new Services.GreetingService();
-            string name = "Suzuki";
+            string name = "TryAgainSuzuki";
             string expected = $@"Hello, {name}!!";
 
             var actual = service.CreateGreeting(name);
