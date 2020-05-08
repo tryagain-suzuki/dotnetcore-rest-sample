@@ -37,5 +37,5 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: '$(publishSubscription)'
-    appName: 'WebApiSample'
+    appName: 'sample-project'
     package: $(System.DefaultWorkingDirectory)/**/*.zip  
