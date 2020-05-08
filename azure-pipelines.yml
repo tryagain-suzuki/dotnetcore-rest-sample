@@ -13,6 +13,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  publishSubscription: 'ARMConnection01'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -35,6 +36,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
+    azureSubscription: '$(publishSubscription)'
     appName: 'WebApiSample'
     package: $(System.DefaultWorkingDirectory)/**/*.zip  
